@@ -7,9 +7,6 @@ RUN apt install ffmpeg -y
 
 RUN pip install fastapi uvicorn numpy pydub requests scipy python-multipart websockets
 
-
 COPY ./main.py /code/
 
-
-# docker run 을 하면 기본으로 실행하는 명령. 빌드하고 실행한다는 것이 아님
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
