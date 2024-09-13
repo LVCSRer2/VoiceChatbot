@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  main:
+    image: main:latest
+    build:
+      context: .
+      dockerfile: dockerfile.main
+    container_name : service-main
+    ports:
+      - "8000:8000"
+
+  asr:
+    image: asr:latest
+    build:
+      context: .
+      dockerfile: dockerfile.asr
+    container_name : service-asr
+    ports:
+      - "8001:8001"    
+
+  chatbot:
+    image: chatbot:latest
+    build:
+      context: .
+      dockerfile: dockerfile.chatbot
+    container_name : service-chatbot
+    ports:
+      - "8002:8002"      
+
