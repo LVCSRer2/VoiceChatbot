@@ -16,7 +16,7 @@ Voice Chatbot with OpenAI Whisper and GPT-4o mini
 
   
 
-클라이언트 예시
+데모 웹페이지
 --------------
 https://lvcsrer2.github.io/voice_chatbot.html
 
